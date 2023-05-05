@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import { logout, logoutEveryDevice } from "../../redux/actions";
 import { AuthenticationContext } from "../../context/authenticationContext";
 import { closeNotify } from "../../redux/features/notify/notifySlice";
+import NavImage from '../../images/newsmania-logo2.png'
 
 function NavBar() {
   const dispatch = useDispatch();
@@ -23,7 +24,13 @@ function NavBar() {
       className="px-2 mb-2 justify-content-between"
     >
       <Navbar.Brand as={Link} to="/" tabIndex="1" rel="opener">
-        Capital
+      <img
+          src={NavImage}
+          alt="logo"
+          width={200}
+          height={50}
+          className="rounded-2"
+        />
       </Navbar.Brand>
       {userIsAuthenticated ? (
         <>

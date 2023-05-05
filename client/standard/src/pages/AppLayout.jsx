@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { Outlet } from "react-router-dom";
-import Container from "react-bootstrap/Container";
+
 import { useSelector } from "react-redux";
 
 import NavBar from "../components/Navbar";
@@ -29,12 +29,12 @@ function AppLayout() {
     <AuthenticationContext.Provider
       value={{ userIsAuthenticated: cachedUserIsAuthenticated }}
     >
-      <Container fluid="md">
+      <div>
         <NavBar />
         {/* Component that reports to user Errors encountered */}
         <AppNotification />
         <Outlet />
-      </Container>
+      </div>
     </AuthenticationContext.Provider>
   );
 }
