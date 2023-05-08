@@ -12,7 +12,7 @@ function Home() {
         <img
           src={image}
           alt="banner"
-          width={600}
+          width={640}
           height={700}
           className="rounded-2"
         />
