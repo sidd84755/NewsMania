@@ -37,7 +37,7 @@ const FetchData = () => {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Share</Button>
+                  <Button size="small">{item.publishedAt.substring(0,10)}</Button>
                   <Button size="small" component="a" href={item.url} target="_blank">Learn More</Button>
                 </CardActions>
               </Card>
