@@ -38,7 +38,7 @@ const FetchData = () => {
                 </CardContent>
                 <CardActions>
                   <Button size="small">{item.publishedAt.substring(0,10)}</Button>
-                  <Button size="small" component="a" href={item.url} target="_blank">Learn More</Button>
+                  <Button size="small" component="a" href={item.url} target="_blank">Read More</Button>
                 </CardActions>
               </Card>
             )) : "Loading...."}

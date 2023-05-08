@@ -46,7 +46,7 @@ function NavBar() {
                 <NavDropdown.Item as={Link} to="/dash/profile">
                   Profile
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#settings">Settings</NavDropdown.Item>
+                {/* <NavDropdown.Item href="#settings">Settings</NavDropdown.Item> */}
               </NavDropdown>
 
               <Nav.Link href="#sth" tabIndex="1">
@@ -54,7 +54,7 @@ function NavBar() {
               </Nav.Link>
 
               <hr />
-              <NavDropdown
+              {/* <NavDropdown
                 title="Security"
                 id="collasible-nav-dropdown-2"
                 tabIndex="1"
@@ -68,7 +68,7 @@ function NavBar() {
                 >
                   Log Out From All Devices
                 </Button>
-              </NavDropdown>
+              </NavDropdown> */}
 
               <Button
                 as={Nav.Item}
