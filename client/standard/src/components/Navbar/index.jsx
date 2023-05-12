@@ -49,8 +49,8 @@ function NavBar() {
                 {/* <NavDropdown.Item href="#settings">Settings</NavDropdown.Item> */}
               </NavDropdown>
 
-              <Nav.Link href="#sth" tabIndex="1">
-                Something here
+              <Nav.Link as={Link} to="/dash/sports">
+                Sports
               </Nav.Link>
 
               <hr />

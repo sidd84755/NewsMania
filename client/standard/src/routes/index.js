@@ -5,6 +5,7 @@ import Home from "../components/Home";
 import PrivateRoute from "../components/Guards/PrivateGuard";
 import PublicRoute from "../components/Guards/PublicGuard";
 import Profile from "../components/Profile";
+import Sports from "../components/Sports";
 import AppLayout from "../pages/AppLayout";
 import Login from "../pages/LoginForm";
 import Lost from "../pages/Lost";
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
         children: [
           { path: "", element: <Dashboard /> },
           { path: "profile", element: <Profile /> },
+          { path: "sports", element: <Sports/> },
         ],
       },
       { path: "404", element: <Lost /> },
