@@ -12,13 +12,13 @@ const FetchData = () => {
     const [data, setData] = useState();
     const fetchData = async () => {
         await axios
-        .get('https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=8368987cc49340ccb6b893b001b4f37b')
+        .get('https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=8368987cc49340ccb6b893b001b4f37b')
         .then((res) => setData(res.data.articles))
     }
     useEffect(() => {
         fetchData();
     }, []);
-
+    
   return (
     <Box width='100%'>
         <Typography gutterBottom variant="h5" textAlign='center'>Top Headlines</Typography>
