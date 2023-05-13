@@ -44,6 +44,15 @@ function NavBar() {
               <Nav.Link as={Link} to="/dash/entertainment">
                 Entertainment
               </Nav.Link>
+              <Nav.Link as={Link} to="/dash/lifestyle">
+                LifeStyle
+              </Nav.Link>
+              <Nav.Link as={Link} to="/dash/business">
+                Business
+              </Nav.Link>
+              <Nav.Link as={Link} to="/dash/tech">
+                Technology
+              </Nav.Link>
               <NavDropdown
                 title="My Account"
                 id="collasible-nav-dropdown"
