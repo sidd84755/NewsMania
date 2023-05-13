@@ -6,13 +6,12 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import Loader from '../Loader';
 
 const FetchData = () => {
     const [data, setData] = useState();
     const fetchData = async () => {
         await axios
-        .get('https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=8368987cc49340ccb6b893b001b4f37b')
+        .get('https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=8368987cc49340ccb6b893b001b4f37b')
         .then((res) => setData(res.data.articles))
     }
     useEffect(() => {
@@ -42,7 +41,7 @@ const FetchData = () => {
                   <Button size="small" component="a" href={item.url} target="_blank">Read More</Button>
                 </CardActions>
               </Card>
-            )) : <Loader/>}
+            )) : "Loading...."}
         </Stack>
     </Box>
   )
