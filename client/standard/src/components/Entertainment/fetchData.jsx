@@ -6,6 +6,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import Loader from '../Loader'
 
 const FetchData = () => {
     const [data, setData] = useState();
@@ -41,7 +42,7 @@ const FetchData = () => {
                   <Button size="small" component="a" href={item.url} target="_blank">Read More</Button>
                 </CardActions>
               </Card>
-            )) : "Loading...."}
+            )) : <Loader/>}
         </Stack>
     </Box>
   )

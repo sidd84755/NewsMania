@@ -38,6 +38,12 @@ function NavBar() {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
+              <Nav.Link as={Link} to="/dash/sports">
+                Sports
+              </Nav.Link>
+              <Nav.Link as={Link} to="/dash/entertainment">
+                Entertainment
+              </Nav.Link>
               <NavDropdown
                 title="My Account"
                 id="collasible-nav-dropdown"
@@ -48,10 +54,6 @@ function NavBar() {
                 </NavDropdown.Item>
                 {/* <NavDropdown.Item href="#settings">Settings</NavDropdown.Item> */}
               </NavDropdown>
-
-              <Nav.Link as={Link} to="/dash/sports">
-                Sports
-              </Nav.Link>
 
               <hr />
               {/* <NavDropdown

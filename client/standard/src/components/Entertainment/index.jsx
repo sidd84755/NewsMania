@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import FetchData from "./fetchData";
-const Sports = () => {
+const Entertainment = () => {
   const user = useSelector((state) => state?.auth?.user);
   return (
     <div className="mt-2">
@@ -12,4 +12,4 @@ const Sports = () => {
   );
 };
 
-export default Sports;
+export default Entertainment;
