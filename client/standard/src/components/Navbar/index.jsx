@@ -28,7 +28,7 @@ function NavBar() {
           src={NavImage}
           alt="logo"
           width={200}
-          height={50}
+          height={45}
           className="rounded-2"
         />
       </Navbar.Brand>

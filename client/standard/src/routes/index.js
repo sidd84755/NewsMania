@@ -9,6 +9,7 @@ import Sports from "../components/Sports";
 import Entertainment from "../components/Entertainment";
 import Lifestyle from "../components/Lifestyle";
 import Business from "../components/Business";
+import Technology from "../components/Technology";
 import AppLayout from "../pages/AppLayout";
 import Login from "../pages/LoginForm";
 import Lost from "../pages/Lost";
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
           { path: "entertainment", element: <Entertainment/> },
           { path: "lifestyle", element: <Lifestyle/> },
           { path: "business", element: <Business/> },
+          { path: "tech", element: <Technology/> },
         ],
       },
       { path: "404", element: <Lost /> },
